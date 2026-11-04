@@ -1,0 +1,2 @@
+ALTER TABLE academic_events
+    ADD COLUMN category VARCHAR(40) NOT NULL DEFAULT 'TEACHING';

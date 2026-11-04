@@ -1,0 +1,756 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.72fr) minmax(0, 1.8fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.profile-identity {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 25px;
+}
+
+.profile-identity-avatar {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 5px;
+  border-radius: 17px;
+  color: #fff;
+  background: linear-gradient(135deg, #684bff, #1689d8);
+  box-shadow: 0 10px 24px #5638ed35;
+}
+
+.profile-identity .eyebrow {
+  color: #5638ed;
+}
+
+.profile-identity h2 {
+  margin: 0;
+  color: #172033;
+  font: 700 20px Manrope, sans-serif;
+}
+
+.profile-identity > p {
+  margin: -5px 0 9px;
+  color: #667085;
+  font-size: 12px;
+}
+
+.profile-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475467;
+  font-size: 11px;
+}
+
+.profile-meta svg {
+  flex: none;
+  color: #6246f5;
+}
+
+.profile-email {
+  width: 100%;
+  margin-top: 6px;
+  padding-top: 13px;
+  border-top: 1px solid #e7eaf1;
+  color: #667085;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.profile-form {
+  display: grid;
+  gap: 17px;
+}
+
+.profile-form .panel-heading {
+  margin-bottom: 2px;
+}
+
+.profile-form label {
+  display: grid;
+  gap: 7px;
+  color: #344054;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #dce2ed;
+  border-radius: 8px;
+  padding: 10px 11px;
+  outline: 0;
+  color: #172033;
+  background: #f9fafc;
+  font: 400 12px "DM Sans", sans-serif;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.profile-form input {
+  height: 40px;
+}
+
+.profile-form textarea {
+  resize: vertical;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+  border-color: #6246f5;
+  background: #fff;
+  box-shadow: 0 0 0 3px #6246f51f;
+}
+
+.profile-bio-label {
+  grid-column: 1 / -1;
+}
+
+.profile-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.profile-form-footer > span {
+  color: #667085;
+  font-size: 10px;
+}
+
+.faculty-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.faculty-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.faculty-summary-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 11px;
+}
+
+.faculty-summary-icon.purple {
+  color: #5638ed;
+  background: #ede9ff;
+}
+
+.faculty-summary-icon.green {
+  color: #007a5e;
+  background: #c9fff0;
+}
+
+.faculty-summary-icon.orange {
+  color: #a64b00;
+  background: #ffedbd;
+}
+
+.faculty-summary-card > div {
+  display: grid;
+  gap: 4px;
+}
+
+.faculty-summary-card small {
+  color: #667085;
+  font-size: 10px;
+}
+
+.faculty-summary-card strong {
+  color: #172033;
+  font: 700 20px Manrope, sans-serif;
+}
+
+.faculty-planner-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.faculty-list-panel {
+  min-width: 0;
+}
+
+.faculty-list-panel > .panel-heading {
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.faculty-list-panel > .panel-heading .button {
+  flex: none;
+}
+
+.goal-list,
+.reminder-list {
+  display: grid;
+}
+
+.goal-item {
+  padding: 16px 0;
+  border-top: 1px solid #e7eaf1;
+}
+
+.goal-item:first-child,
+.reminder-item:first-child {
+  border-top: 0;
+  padding-top: 1px;
+}
+
+.goal-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.goal-category {
+  display: inline-flex;
+  margin-bottom: 5px;
+  color: #5638ed;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.goal-item h3 {
+  margin: 0;
+  color: #172033;
+  font: 700 13px Manrope, sans-serif;
+}
+
+.goal-item > p,
+.reminder-copy p {
+  margin: 7px 0;
+  color: #667085;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.goal-item-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.goal-item-actions .icon-button,
+.reminder-delete {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+
+.goal-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.goal-progress-track {
+  height: 8px;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e8ebf3;
+}
+
+.goal-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #684bff, #1689d8);
+  transition: width 0.2s ease;
+}
+
+.goal-progress strong {
+  min-width: 33px;
+  color: #5638ed;
+  font-size: 10px;
+  text-align: right;
+}
+
+.goal-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  color: #667085;
+  font-size: 9px;
+}
+
+.deadline {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #667085;
+}
+
+.deadline.overdue {
+  color: #bd1746;
+  font-weight: 600;
+}
+
+.goal-item.completed .goal-category,
+.goal-item.completed .goal-progress strong,
+.goal-item.completed .goal-item-footer {
+  color: #007a5e;
+}
+
+.goal-item.completed .goal-progress-track span {
+  background: #00a88f;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 0;
+  border-top: 1px solid #e7eaf1;
+}
+
+.reminder-check {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  color: #6246f5;
+  background: #ede9ff;
+}
+
+.reminder-item.completed .reminder-check {
+  color: #007a5e;
+  background: #d9fff5;
+}
+
+.reminder-copy {
+  display: grid;
+  flex: 1;
+  gap: 4px;
+  min-width: 0;
+}
+
+.reminder-copy strong {
+  color: #172033;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.reminder-copy p {
+  margin: 0;
+}
+
+.reminder-copy .deadline {
+  margin-top: 3px;
+  font-size: 9px;
+}
+
+.reminder-item.completed .reminder-copy strong {
+  color: #667085;
+  text-decoration: line-through;
+}
+
+.reminder-delete {
+  opacity: 0.65;
+}
+
+.reminder-item:hover .reminder-delete {
+  opacity: 1;
+}
+
+.faculty-feature-empty {
+  display: grid;
+  justify-items: center;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.faculty-feature-empty > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 11px;
+  border-radius: 13px;
+  color: #fff;
+  background: linear-gradient(135deg, #684bff, #1689d8);
+}
+
+.reminder-empty > span {
+  background: linear-gradient(135deg, #f59e0b, #f04472);
+}
+
+.faculty-feature-empty strong {
+  color: #172033;
+  font: 700 12px Manrope, sans-serif;
+}
+
+.faculty-feature-empty p {
+  max-width: 250px;
+  margin: 7px 0 14px;
+  color: #667085;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.modal-card input[type="range"] {
+  height: 22px;
+  padding: 0;
+  accent-color: #6246f5;
+}
+
+.faculty-directory-layout {
+  display: grid;
+  grid-template-columns: minmax(245px, 0.72fr) minmax(0, 1.8fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.faculty-directory-list,
+.faculty-directory-detail {
+  min-width: 0;
+}
+
+.faculty-directory-list > .panel-heading {
+  margin-bottom: 15px;
+}
+
+.faculty-directory-list > .panel-heading > svg,
+.faculty-admin-tools .panel-heading > svg {
+  color: #806be2;
+  flex: none;
+}
+
+.directory-filter-label,
+.faculty-admin-tools label,
+.schedule-editor label {
+  display: grid;
+  gap: 6px;
+  color: #626879;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.directory-filter-label select,
+.faculty-admin-tools input,
+.schedule-editor input {
+  width: 100%;
+  min-width: 0;
+  height: 37px;
+  border: 1px solid #e8eaf0;
+  border-radius: 7px;
+  padding: 0 10px;
+  outline: 0;
+  color: #505567;
+  font-size: 11px;
+  background: #fff;
+}
+
+.directory-filter-label select:focus,
+.faculty-admin-tools input:focus,
+.schedule-editor input:focus {
+  border-color: #a89bea;
+  box-shadow: 0 0 0 3px #8b78ed18;
+}
+
+.faculty-directory-search {
+  margin: 12px 0;
+}
+
+.faculty-directory-items {
+  display: grid;
+  gap: 5px;
+  max-height: 640px;
+  overflow: auto;
+}
+
+.faculty-directory-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  text-align: left;
+}
+
+.faculty-directory-item:hover,
+.faculty-directory-item.selected {
+  border-color: #e6e1ff;
+  background: #f7f5ff;
+}
+
+.faculty-directory-person {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.faculty-directory-person strong {
+  overflow: hidden;
+  color: #373a4b;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.faculty-directory-person small {
+  overflow: hidden;
+  color: #9298a8;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.faculty-directory-detail {
+  display: grid;
+  gap: 14px;
+}
+
+.faculty-record-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.faculty-record-heading h2 {
+  margin: 5px 0 3px;
+  color: #292b3d;
+  font: 700 19px Manrope, sans-serif;
+}
+
+.faculty-record-heading p {
+  margin: 0;
+  color: #868d9e;
+  font-size: 11px;
+}
+
+.faculty-record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid #f0f1f5;
+  color: #777f92;
+  font-size: 10px;
+}
+
+.faculty-admin-tools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.faculty-admin-tools form {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.faculty-admin-tools form + form {
+  padding-left: 20px;
+  border-left: 1px solid #eceef4;
+}
+
+.faculty-admin-tools .panel-heading {
+  margin-bottom: 2px;
+}
+
+.faculty-admin-tools .button {
+  justify-self: start;
+}
+
+.faculty-detail-panel .panel-heading {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.faculty-detail-panel .panel-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.faculty-detail-panel .panel-heading h2 svg {
+  color: #806be2;
+}
+
+.faculty-detail-table {
+  min-width: 620px;
+}
+
+.faculty-detail-table tbody td strong {
+  color: #444858;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.faculty-activity-description {
+  display: block;
+  max-width: 280px;
+  margin-top: 4px;
+  color: #9298a8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.faculty-progress-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.faculty-progress-stats > div {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  border: 1px solid #eff0f5;
+  border-radius: 9px;
+  background: #fcfbff;
+}
+
+.faculty-progress-stats small {
+  color: #9298a8;
+  font-size: 9px;
+}
+
+.faculty-progress-stats strong {
+  color: #383a4b;
+  font: 700 17px Manrope, sans-serif;
+}
+
+.faculty-progress-stats strong span {
+  color: #9298a8;
+  font: 500 9px "DM Sans", sans-serif;
+}
+
+.schedule-editor {
+  display: grid;
+  gap: 11px;
+  margin-bottom: 15px;
+  padding: 14px;
+  border: 1px solid #ece9fa;
+  border-radius: 9px;
+  background: #fbfaff;
+}
+
+.faculty-readonly-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.faculty-form-note {
+  color: #9298a8;
+  font-size: 10px;
+}
+
+.faculty-portal-section {
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .profile-layout,
+  .faculty-planner-grid,
+  .faculty-directory-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-admin-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-admin-tools form + form {
+    padding: 18px 0 0;
+    border-top: 1px solid #eceef4;
+    border-left: 0;
+  }
+
+  .profile-identity {
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+  }
+
+  .profile-identity-avatar {
+    grid-row: span 3;
+    margin: 0;
+  }
+
+  .profile-identity .eyebrow,
+  .profile-identity h2,
+  .profile-identity > p {
+    grid-column: 2;
+  }
+
+  .profile-meta,
+  .profile-email {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .faculty-readonly-fields,
+  .faculty-progress-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-summary-grid {
+    gap: 8px;
+  }
+
+  .faculty-summary-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 11px;
+  }
+
+  .faculty-summary-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .faculty-summary-card strong {
+    font-size: 17px;
+  }
+
+  .faculty-summary-card small {
+    font-size: 9px;
+  }
+
+  .faculty-list-panel > .panel-heading {
+    align-items: flex-start;
+  }
+
+  .faculty-list-panel > .panel-heading .button {
+    min-height: 33px;
+    padding: 0 9px;
+    font-size: 10px;
+  }
+}
